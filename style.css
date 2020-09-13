@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clearfix::after,
+.clearfix::before{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.wrapper{
+  position: absolute;
+  width: 700px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.signUp-area{
+  text-align: center;
+  padding: 50px 20px;
+  box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.5);
+  background: #fff;
+}
+.signUp-area h1{
+  font-family: sans-serif;
+  font-size: 42px;
+  font-weight: normal;
+  text-transform: capitalize;
+  color: #2b2b2b;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 70px;
+
+}
+.signUp-area h1::after{
+  position: absolute;
+  content: '';
+  width: 200px;
+  height: 4px;
+  background: #5cd3b4;
+  margin-top: 60px;
+  left: 0;
+}
+.signUp-area label{
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #696969;
+  text-transform: capitalize;
+  width: 30%;
+  float: left;
+  text-align: right;
+  margin-top: 16px;
+}
+:focus{
+  outline: none;
+}
+.signUp-area input{
+  border: 1px solid rgba(198, 198, 198, 0.7);
+  padding: 15px 5px;
+  width: 60%;
+  margin-left: 6%;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #696969;
+  margin-bottom: 20px;
+  float: left;
+}
+.checkbox-area input[type="checkbox"]{
+  float: left;
+  width: 2%;
+  margin-left: 36%;
+}
+.checkbox-area label {
+  float: left;
+  width: 60%;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #696969;
+  margin-top: 0;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: -2px;
+}
+a.linkColor{
+  color: #5cd3b4;
+  text-decoration: none;
+}
+a.linkColor:hover{
+  text-decoration: underline;
+}
+.signUp-area input[type="submit"]{
+  background: #5cd3b4;
+  color: #fff;
+  text-transform: capitalize;
+  width: 35%;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 0;
+  border-bottom: 5px solid #53c2a5;
+  float: none;
+}
+.signUp-area input[type="submit"]:hover{
+  background: #62dfbf;
+  border-bottom: 5px solid #57cfaf;
+}
+.haveAccount{
+  font-size: 16px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #696969;
+  clear: both;
+  margin-top: 20px;
+}
