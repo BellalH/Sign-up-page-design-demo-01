@@ -4,40 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
-  <title>Login page demo 01</title>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Sign up|Log In page design</title>
 </head>
 <body>
 
   <div class="wrapper">
-    <div class="signUp-area">
-    <h1>sign up</h1>
-    <form action="#">
-      <div class="name clearfix">
-        <label for="firstName">username</label>
-        <input type="text" id="firstName">
+    <div class="main-form">
+      <div class="sign-log-area clearfix">
+        <a href="#" class="sign-up">Sign up</a>
+        <a href="#" class="log-in">Log In</a>
       </div>
-      <div class="email clearfix">
-        <label for="email">email address</label>
-        <input type="email" id="email">
-      </div>
-      <div class="password clearfix">
-        <label for="password">password</label>
-        <input type="password" id="password">
-      </div>
-      <div class="confirm-password clearfix">
-        <label for="conPassword">confirm password</label>
-        <input type="password" id="conPassword" value="">
-      </div>
-      <div class="checkbox-area clearfix">
-        <input type="checkbox">
-        <label for="">I accept the <a href="#" class="linkColor">Terms of Use</a> & <a href="#" class="linkColor">Privacy Policy</a>.</label>
-      </div>
-      <input type="submit" name="" value="Sign Up">
-    </form>
+      <h1>Sign Up</h1>
+      <form action="#">
+        <div class="name-area clearfix">
+          <input type="text" name="firstName" placeholder="First Name">
+          <input type="text" name="lastName" placeholder="Last Name">
+        </div>
+        <input type="email" name="email" placeholder="Email Address">
+        <input type="password" name="password" placeholder="Set A Password">
+        <input type="submit" name="submit" value="GET STARTED">
+      </form>
     </div>
-      <p class="haveAccount">Already have an account? <a href="#" class="linkColor">Login here</a></p>
   </div>
+
 
 
 </body>
